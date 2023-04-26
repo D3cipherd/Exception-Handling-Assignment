@@ -29,7 +29,7 @@ public class ARXMLSort {
         }
         
         try {
-		
+	    // Store input file name
             String inputFileName = args[0];
           
             // Check if input file ends with valid extension ".arxml"
