@@ -12,4 +12,4 @@ This program reads an ARXML file containing a list of containers, each with a un
 - The program uses the javax.xml.parsers.DocumentBuilderFactory and javax.xml.parsers.DocumentBuilder classes to parse the input file and manipulate the XML data.
 - The program preserves the original formatting of the input file in the output file.
 - The output file shall be named as the same of the input file concatenated with “_mod.arxml”  
-> e.g. if the input was named “Rte_Ecuc.arxml” then the output should be “Rte_Ecuc_mod.arxml”.
+  > e.g. if the input was named “Rte_Ecuc.arxml” then the output should be “Rte_Ecuc_mod.arxml”.
