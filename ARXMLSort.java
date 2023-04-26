@@ -29,16 +29,17 @@ public class ARXMLSort {
         }
         
         try {
-            // Read input file
+		
             String inputFileName = args[0];
-            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder dBuilder;
-        
+          
             // Check if input file ends with valid extension ".arxml"
             if(!inputFileName.endsWith(".arxml")){
                 throw new NotValidAutosarFileException("Invalid file extension.");
             }
-        
+		
+	    // Read input file
+	    DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder;
             dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(inputFileName);
             doc.getDocumentElement().normalize();
